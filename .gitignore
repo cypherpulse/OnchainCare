@@ -1,0 +1,464 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.yarn-integrity
+
+# Production builds
+dist/
+dist-ssr/
+build/
+out/
+.next/
+.nuxt/
+.output/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+
+# Keep environment example
+!.env.example
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+.nyc_output/
+
+# Dependency directories
+jspm_packages/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# parcel-bundler cache (https://parceljs.org/)
+.cache
+.parcel-cache
+
+# Next.js build output
+.next
+
+# Nuxt.js build / generate output
+.nuxt
+dist
+
+# Gatsby files
+.cache/
+public
+
+# Storybook build outputs
+.out
+.storybook-out
+
+# Temporary folders
+tmp/
+temp/
+.tmp/
+.temp/
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.stackdump
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# macOS
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Visual Studio files
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# JetBrains IDEs
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# SublimeText
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# Web3 / Blockchain specific
+# Private keys and sensitive wallet data
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+*.wallet
+private-key.txt
+mnemonic.txt
+seed.txt
+
+# Hardhat / Foundry
+artifacts/
+cache/
+typechain-types/
+deployments/localhost/
+deployments/hardhat/
+
+# Truffle
+build/
+
+# OpenZeppelin
+.openzeppelin/
+
+# Contract artifacts
+*.solc
+*.combined.json
+
+# WalletConnect
+.walletconnect/
+
+# MetaMask
+metamask-extension/
+
+# Local blockchain data
+chaindata/
+dapps/
+geth/
+parity/
+
+# IPFS
+.ipfs/
+.datastore/
+
+# Ceramic
+.ceramic/
+.idx/
+
+# Textile
+.textile/
+
+# Testing
+test-results/
+playwright-report/
+playwright/.cache/
+test-results/
+coverage/
+.nyc_output/
+
+# Cypress
+cypress/videos/
+cypress/screenshots/
+
+# Playwright
+test-results/
+playwright-report/
+
+# Jest
+.jest/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Local database
+db.sqlite
+database.db
+
+# Firebase
+.firebase/
+firebase-debug.log
+firestore-debug.log
+
+# Vercel
+.vercel
+
+# Netlify
+.netlify/
+
+# Surge
+.surge/
+
+# Heroku
+.heroku/
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+.env.docker
+
+# Local development
+.local
+.dev
+
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+*.rej
+
+# Lock files (keep one)
+package-lock.json
+yarn.lock
+# Keep pnpm-lock.yaml
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Health check files
+healthcheck
+status
+
+# Performance monitoring
+*.prof
+*.cpuprofile
+
+# Debug files
+debug.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Security
+secrets/
+config/secrets.*
+*.secret
+*.key
+private/
+
+# API keys and tokens
+api-keys.json
+tokens.json
+credentials.json
+
+# Local SSL certificates
+ssl/
+certs/
+*.crt
+*.key
+*.pem
+*.cer
+
+# Documentation builds
+docs/build/
+docs/.vuepress/dist/
+
+# Local development servers
+.serverless/
+.serverless-wsgi
+
+# AWS
+.aws/
+sam-cli/
+.chalice/
+
+# Google Cloud
+.gcloud/
+.google/
+
+# Azure
+.azure/
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfvars
+
+# Ansible
+*.retry
+
+# Vagrant
+.vagrant/
+
+# Packer
+packer_cache/
+
+# Chef
+.chef/
+
+# Puppet
+spec/fixtures/manifests/
+spec/fixtures/modules/
+.yardoc/
+coverage/
+
+# Go (if any Go tools)
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Rust (if any Rust tools)
+target/
+Cargo.lock
+
+# Python (if any Python tools)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Ruby (if any Ruby tools)
+.bundle/
+.bundler/
+.gem
+.ruby-version
+
+# PHP (if any PHP tools)
+vendor/
+composer.lock
+
+# Java (if any Java tools)
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+hs_err_pid*
+
+# Gradle
+.gradle/
+build/
+gradle-app.setting
+!gradle-wrapper.jar
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+plugin-updates-report.html
+property-updates-report.html
+
+# Local configuration
+config/local.*
+config/development.*
+config/test.*
+config/production.*
+
+# User-specific files
+.user
+.personal
+.localrc
+
+.ps1
+ps1
+# Application specific
+# Add any app-specific files that shouldn't be committed
+# e.g., user uploads, generated content, etc.
+
+# Emergency ignore (uncomment if needed)
+# *
+# !README.md
+# !.gitignore
