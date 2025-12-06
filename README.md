@@ -32,6 +32,28 @@ The platform integrates with custom smart contracts for:
 - Access control and audit logging
 - Decentralized identity verification
 
+### Stable Coin Payments
+
+OnchainCare supports seamless payments using stablecoins for all healthcare services:
+
+#### Supported Stablecoins
+- **USDC (USD Coin)**: Primary stablecoin for medical billing and payments
+- **USDT (Tether)**: Alternative stablecoin option
+- **DAI**: Decentralized stablecoin support
+
+#### Payment Features
+- **Instant Settlements**: Real-time payment processing on Base L2
+- **Low Fees**: Sub-cent transaction costs for all payments
+- **Transparent Pricing**: Smart contract-based pricing with no hidden fees
+- **Multi-Currency**: Support for ETH and stablecoin payments
+- **Refund Protection**: Built-in dispute resolution for payment issues
+
+#### Billing Integration
+- **Automated Invoicing**: Smart contracts generate and send invoices
+- **Payment Tracking**: Immutable payment history on blockchain
+- **Insurance Integration**: Compatible with decentralized insurance protocols
+- **Cross-Border Payments**: Global payments without currency conversion fees
+
 ### Web3 Stack
 
 - **Wagmi**: React hooks for Ethereum
