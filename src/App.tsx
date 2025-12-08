@@ -23,6 +23,7 @@ const queryClient = new QueryClient();
 const App = () => (
   <WagmiProvider config={config}>
     <QueryClientProvider client={queryClient}>
+   
       <RainbowKitProvider
         theme={darkTheme({
           accentColor: 'hsl(142 71% 45%)',
