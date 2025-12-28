@@ -1,4 +1,5 @@
 import { ConnectButton } from '@rainbow-me/rainbowkit';
+// Minor update: Added comment for clarity
 import { motion } from 'framer-motion';
 import { Hexagon, Shield, Database, FileCheck, Wallet, Activity, Lock, Zap, ChevronRight, ExternalLink } from 'lucide-react';
 
