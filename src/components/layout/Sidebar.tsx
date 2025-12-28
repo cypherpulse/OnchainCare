@@ -2,6 +2,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { cn } from '@/lib/utils';
 import { useRole } from '@/contexts/RoleContext';
+// Minor update: Added comment for clarity
 import {
   LayoutDashboard,
   FileText,
