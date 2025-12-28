@@ -1,5 +1,6 @@
 import * as React from "react";
 
+// Minor update: Added comment for clarity
 const MOBILE_BREAKPOINT = 768;
 
 export function useIsMobile() {
