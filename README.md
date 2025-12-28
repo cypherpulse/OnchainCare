@@ -4,6 +4,33 @@
 
 OnchainCare is a revolutionary decentralized healthcare management platform built on blockchain technology. It provides secure, transparent, and patient-centric healthcare services by leveraging smart contracts, decentralized identity, and cryptocurrency payments. The system enables doctors, patients, and administrators to manage medical records, appointments, billing, and access logs in a trustless environment.
 
+## System Architecture
+
+```mermaid
+graph TB
+    A[Frontend - React/TypeScript] --> B[RainbowKit Wallet Connection]
+    B --> C[Base L2 Blockchain]
+    C --> D[Smart Contracts]
+    
+    D --> E[Patient Registry Contract]
+    D --> F[Billing Contract]
+    D --> G[Consent Management Contract]
+    D --> H[Audit Log Contract]
+    
+    E --> I[IPFS/Filecoin Storage]
+    F --> J[Stablecoin Payments USDC/USDT/DAI]
+    G --> K[Decentralized Identity]
+    H --> L[Immutable Access Logs]
+    
+    M[Doctors] --> A
+    N[Patients] --> A
+    O[Administrators] --> A
+    
+    style A fill:#e1f5fe
+    style C fill:#f3e5f5
+    style D fill:#e8f5e8
+```
+
 ### Key Features
 
 - **Decentralized Patient Records**: Immutable medical records stored on blockchain ensuring data integrity and patient ownership
@@ -53,6 +80,35 @@ OnchainCare supports seamless payments using stablecoins for all healthcare serv
 - **Payment Tracking**: Immutable payment history on blockchain
 - **Insurance Integration**: Compatible with decentralized insurance protocols
 - **Cross-Border Payments**: Global payments without currency conversion fees
+
+## Payment Flow
+
+```mermaid
+sequenceDiagram
+    participant P as Patient
+    participant F as Frontend
+    participant W as Wallet
+    participant SC as Smart Contract
+    participant B as Base L2
+
+    P->>F: Request Service
+    F->>SC: Generate Invoice
+    SC-->>F: Invoice Details
+    F-->>P: Display Invoice
+
+    P->>F: Initiate Payment
+    F->>W: Request Signature
+    W-->>P: Confirm Transaction
+    P->>W: Sign Transaction
+    W->>B: Submit Transaction
+    B->>SC: Execute Payment
+    SC-->>B: Payment Recorded
+    B-->>W: Transaction Confirmed
+    W-->>F: Payment Success
+    F-->>P: Payment Complete
+
+    Note over SC,B: Immutable Payment Record
+```
 
 ### Web3 Stack
 
@@ -151,6 +207,42 @@ src/
 └── App.tsx              # Main application component
 ```
 
+## Component Architecture
+
+```mermaid
+graph TD
+    A[App.tsx] --> B[RoleProvider Context]
+    A --> C[QueryClient Provider]
+    A --> D[WagmiProvider]
+    A --> E[RainbowKitProvider]
+    
+    B --> F[Role Selection Modal]
+    D --> G[Wallet Connection]
+    E --> H[Network Selection]
+    
+    I[DashboardLayout] --> J[Sidebar Navigation]
+    I --> K[TopBar]
+    I --> L[Main Content Area]
+    
+    J --> M[Patient Routes]
+    J --> N[Doctor Routes]
+    J --> O[Admin Routes]
+    
+    M --> P[PatientDashboard]
+    M --> Q[PatientRecords]
+    M --> R[PatientBilling]
+    M --> S[PatientConsent]
+    
+    N --> T[DoctorDashboard]
+    N --> U[DoctorPatients]
+    N --> V[DoctorBilling]
+    N --> W[DoctorAccessLogs]
+    
+    style A fill:#bbdefb
+    style I fill:#c8e6c9
+    style J fill:#ffcdd2
+```
+
 ## Usage
 
 ### For Patients
@@ -173,6 +265,50 @@ src/
 3. Monitor blockchain transactions
 4. Handle dispute resolution
 
+## User Role Flow
+
+```mermaid
+flowchart TD
+    A[User Visits OnchainCare] --> B{Connected Wallet?}
+    B -->|No| C[Connect Wallet via RainbowKit]
+    B -->|Yes| D[Role Selection Modal]
+    
+    C --> D
+    D --> E{Select Role}
+    
+    E -->|Patient| F[Patient Dashboard]
+    E -->|Doctor| G[Doctor Dashboard]
+    E -->|Admin| H[Admin Dashboard]
+    
+    F --> I[View Medical Records]
+    F --> J[Manage Consent]
+    F --> K[Pay Bills with Stablecoins]
+    
+    G --> L[Access Patient Records]
+    G --> M[Update Medical Data]
+    G --> N[Generate Invoices]
+    G --> O[View Access Logs]
+    
+    H --> P[Manage User Roles]
+    H --> Q[Monitor Transactions]
+    H --> R[Audit System]
+    
+    I --> S[Blockchain Storage]
+    J --> S
+    K --> S
+    L --> S
+    M --> S
+    N --> S
+    O --> S
+    P --> S
+    Q --> S
+    R --> S
+    
+    style A fill:#e3f2fd
+    style D fill:#f3e5f5
+    style S fill:#e8f5e8
+```
+
 ## Security & Privacy
 
 - **Zero-Knowledge Proofs**: Privacy-preserving computations
@@ -180,6 +316,41 @@ src/
 - **Decentralized Identity**: Self-sovereign identity management
 - **Audit Trails**: Immutable access logs for compliance
 - **Smart Contract Audits**: Regular security audits of contracts
+
+## Data Flow Architecture
+
+```mermaid
+flowchart LR
+    A[User Interface] --> B[React Components]
+    B --> C[Context Providers]
+    C --> D[Web3 Hooks]
+    D --> E[Wagmi/Viem]
+    E --> F[Wallet Connection]
+    E --> G[Smart Contract Calls]
+    
+    F --> H[RainbowKit]
+    G --> I[Base L2 Network]
+    
+    I --> J[Patient Registry SC]
+    I --> K[Billing SC]
+    I --> L[Consent SC]
+    I --> M[Audit SC]
+    
+    J --> N[IPFS Storage]
+    K --> O[Stablecoin Transfers]
+    L --> P[Permission Checks]
+    M --> Q[Access Logging]
+    
+    N --> R[Decentralized Storage]
+    O --> S[Payment Records]
+    P --> T[Consent Validation]
+    Q --> U[Audit Trail]
+    
+    style A fill:#bbdefb
+    style I fill:#ffcdd2
+    style R fill:#c8e6c9
+    style U fill:#e1f5fe
+```
 
 ## Contributing
 
