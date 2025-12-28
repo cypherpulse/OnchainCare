@@ -9,6 +9,7 @@ import { config } from '@/lib/web3/config';
 import { RoleProvider } from '@/contexts/RoleContext';
 import '@rainbow-me/rainbowkit/styles.css';
 
+// Minor update: Added comment for clarity
 import Index from "./pages/Index";
 import Records from "./pages/Records";
 import Consent from "./pages/Consent";
