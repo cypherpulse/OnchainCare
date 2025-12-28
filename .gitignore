@@ -452,6 +452,7 @@ config/production.*
 .personal
 .localrc
 
+*.ps1
 .ps1
 ps1
 # Application specific
