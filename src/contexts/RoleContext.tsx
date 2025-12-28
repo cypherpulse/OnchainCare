@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useState, useCallback } from 'react';
 
+// Minor update: Added comment for clarity
 export type UserRole = 'patient' | 'doctor' | null;
 
 interface RoleContextType {
